@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(255, 221, 221, 0.871);
+}
+
+nav{
+    background: rgb(255, 139, 159);
+    height: 50px;
+    width: 100%;
+}
+
+label.logo{
+    color: whitesmoke;
+    font-size: 35px;
+    line-height: 50px;
+    padding: 0 100px;
+    font-weight: bold
+}
+
+nav ul{
+    float: right; 
+    /* something like putting a specific group to somewhere */
+    margin-right: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    /* to make specific group to be inline like to go display like in column way */
+    line-height: 50px;
+    margin: 0 8px;
+}
+
+nav ul li a{
+    color: whitesmoke;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active, a:hover{
+    background-color: whitesmoke;
+    color: rgb(255, 139, 159);
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: whitesmoke;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: pink;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background-color: none;
+        color: palevioletred;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+

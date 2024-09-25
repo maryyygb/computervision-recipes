@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #32333c;
+    padding: 0 2em;
+    height: 100vh;
+    overflow: auto;
+}
+
+div.con {
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+div.left-side {
+    height: 100vh;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+div.list:first-child {
+    width: 20%;
+    /* background: #f5f5f5; */
+    /* background: #2d2e36; */
+    padding: 1rem;
+    overflow: auto;
+}
+
+div.l-li-1 {
+    position: sticky;
+    scroll-behavior: smooth;
+    top: 0px;
+    background: #2d2e36;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+img.my-picture {
+    width: 100px;
+    height: auto;
+    border-radius: 20rem;
+}
+
+div.status {
+    position: absolute;
+    background: #e7712c;
+    height: 17px;
+    width: 17px;
+    border-radius: 20rem;
+    left: 9.5rem;
+    top: 7.5rem;
+    animation: active .7s ease-in-out infinite;
+}
+
+div.status-1 {
+    position: absolute;
+    background: #e7712ce0;
+    height: 12px;
+    width: 12px;
+    border-radius: 20rem;
+    left: 9.75rem;
+    top: 7.75rem;
+    /* animation: active .2s ease-in-out infinite; */
+}
+
+h3.name {
+    color: #bcbcbc;
+    margin: .2rem .5rem .5rem;
+    font-size: .9rem;
+}
+
+p:is(.role, .location) {
+    margin: -.2rem;
+    font-size: .8rem;
+    color: #636363;
+}
+
+img.me {
+    width: 150px;
+    height: auto;
+}
+
+div.l-li-2 {
+    margin: 1.5rem 8px;
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.second {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+div.second:first-child {
+    text-align: start;
+}
+
+div.second:last-child {
+    text-align: end;
+}
+
+div.l-li-2 p {
+    color: #a9a9a9;
+}
+
+li {
+    list-style: none;
+}
+
+/* Language */
+
+div.l-li-3 ul {
+    display: flex;
+    justify-content: center;
+    color: #a9a9a9;
+    font-size: .9rem;
+    gap: 1.8rem;
+    text-align: center;
+    margin: 2.5rem 0 1.5rem;
+}
+
+li.language > div p {
+    border: 4px solid #e7712c;
+    border-radius: 100%;
+    padding: 1rem .6rem;
+    margin: .4rem;
+}
+
+li.language:last-child > div p {
+    border: 4px solid #e7712c;
+    border-radius: 100%;
+    padding: 1rem .6rem;
+    margin: .4rem;
+}
+
+/* SKILLS */
+
+div.l-li-4 {
+    color: #a9a9a9;
+    font-size: .9rem;
+    padding: .5rem;
+    margin: 2.5rem 0 2rem;
+}
+
+div.l-li-4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+li.skills div {
+    display: flex;
+    justify-content:space-between;
+}
+
+/* Sub Skills */
+
+div.l-li-5 {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    color: #8f8f8f;
+    margin: 2rem 0;
+    font-size: .85rem;
+}
+
+div.list-childs {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* Middle */
+
+div.middle {
+    width: 70%;
+    height: auto;
+}
+
+div.m-li-1 {
+    overflow: auto;
+
+}
+
+::-webkit-scrollbar {
+    width: .2rem;
+}
+
+/* ::-webkit-scrollbar-track {
+    border: 1px solid #2d2e36;
+}
+
+::-webkit-scrollbar-track-piece {
+    border: 1px soid #2d2e36;
+    background-color: #2d2e36;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bcbcbc;
+} */
+
+@keyframes active {
+    0% {
+        height: 19px;
+    width: 19px; 
+    opacity: 0.1;
+    background-color: rgb(194, 111, 48);
+    }
+    /* 20% {
+        height: 20px;
+        width: 20px; 
+    opacity: 0.1;
+    background-color: rgb(178, 107, 53);
+    } */
+    40% {
+        height: 21px;
+        width: 21px; 
+    opacity: 0.2;
+    background-color: rgb(205, 153, 108);
+    }
+    /* 60% {
+        height: 20px;
+    width: 20px; 
+    background-color: rgb(108, 205, 108);
+    opacity: 0.5;
+    } */
+    80% {
+        height: 19px;
+        width: 19px; 
+    opacity: 0.2;
+    background-color: rgb(226, 190, 163);
+    }
+    100% {
+        height: 18px;
+    width: 18px; 
+    background-color: rgb(226, 202, 179);
+    opacity: 0.1;
+    }
+}

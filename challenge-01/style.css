@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #d7c7bd;
+}
+
+nav {
+    height: auto;
+    padding: 1rem;
+}
+
+nav > ul {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul li {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+nav > ul li a.action-btn {
+    background: #000;
+    border-radius: 20rem;
+    padding: .3rem 1rem;
+    color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    font-size: .9rem;
+}
+
+li {
+    list-style: none;
+}
+
+/* Categories */
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside > ul {
+    width: 50%;
+    background: #ebe5e5;
+    border-radius: 20rem;
+    padding: .5rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8rem;
+}
+
+aside > ul li:last-child {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+
+/* Main Body */
+main {
+    height: auto;
+    margin: 2rem 3rem;
+}
+
+main > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+main > ul li:first-child {
+    width: 40%;
+}
+
+main > ul li div h2 {
+    font-size: 2.5rem;
+    margin: .6rem 0 0 0;
+}
+
+main > ul li div p {
+    font-size: .5rem;
+    margin: .6rem 0 0 0;
+}
+
+main > ul li div.button-input {
+    font-size: .5rem;
+    margin: .6rem 0 0 0;
+}
+
+main > ul li div h5 {
+    font-size: 1rem;
+    margin: .6rem 0 0 0;
+}
+
+main > ul li div.button-input {
+    display: flex;
+    font-size: 1rem;
+    background: #f5f5f5;
+    border: 1px solid #000;
+    border-radius: 20rem;
+    width: 70%;
+    gap: 0rem;
+}
+
+main > ul li div input {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 1rem 1rem;
+    width: 80%;
+}
+
+main > ul li div button {
+    font-size: 1rem;
+    color: #f5f5f5;
+    background: #000;
+    border: none;
+    border-radius: 20rem;
+    outline: none;
+    padding: 0 1rem;
+    width: 40%;
+}
+
+main > ul li div input:active {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+main > ul li div input:focus {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+}
