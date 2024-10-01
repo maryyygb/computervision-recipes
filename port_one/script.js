@@ -10,6 +10,7 @@ for (let i = 0; i < skills.length; i++) {
   skills[i].style.height = "5px";
   skills[i].style.margin = "5px 0";
   skills[i].style.borderRadius = "10rem";
+  skills[i].style.boxShadow = "#e7712a .5px .5px 1px"
 
   switch (percent[i].textContent) {
     case "50%":
